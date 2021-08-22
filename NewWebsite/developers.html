@@ -97,48 +97,48 @@
         <div class="card">
          <div class="content">
            <div class="img">
-            <img src="images/img3.jpg" alt="">
+            <img src="us/thulio.jfif" alt="">
            </div>
            <div class="details">
              <div class="name">Thulio Balbuena</div>
              <div class="job">Web Developer</div>
            </div>
            <div class="media-icons">
-             <button href="#"><i class="fab fa-facebook-f"></i></button>
-             <button href="#"><i class="fab fa-twitter"></i></button>
-             <button href="#"><i class="fab fa-instagram"></i></button>
+             <button onclick="window.open('https://www.facebook.com/thuliobalbuena/')"><i class="fab fa-facebook-f"></i></button>
+             <button onclick="window.open('https://twitter.com/Balbuenaxx')"><i class="fab fa-twitter"></i></button>
+             <button onclick="window.open('https://www.instagram.com/thuliobalbuenaa/')"><i class="fab fa-instagram"></i></button>
            </div>
          </div>
         </div>
         <div class="card">
          <div class="content">
            <div class="img">
-            <img src="images/img3.jpg" alt="">
+            <img src="us/martins.jfif" alt="">
            </div>
            <div class="details">
              <div class="name">Arthur Martins</div>
              <div class="job">Documentation</div>
            </div>
            <div class="media-icons">
-             <button href="#"><i class="fab fa-facebook-f"></i></button>
-             <button href="#"><i class="fab fa-twitter"></i></button>
-             <button href="#"><i class="fab fa-instagram"></i></button>
+             <button onclick="window.open('https://www.facebook.com/arthur.martins.3194524')"><i class="fab fa-facebook-f"></i></button>
+             <button onclick="window.open('https://twitter.com/artins333')"><i class="fab fa-twitter"></i></button>
+             <button onclick="window.open('https://www.instagram.com/artmtins/')"><i class="fab fa-instagram"></i></button>
            </div>
          </div>
         </div>
         <div class="card">
          <div class="content">
            <div class="img">
-            <img src="images/img3.jpg" alt="">
+            <img src="us/juan.jfif" alt="">
            </div>
            <div class="details">
              <div class="name">Juan Carvalho</div>
              <div class="job">Documentation</div>
            </div>
            <div class="media-icons">
-             <button href="#"><i class="fab fa-facebook-f"></i></button>
-             <button href="#"><i class="fab fa-twitter"></i></button>
-             <button href="#"><i class="fab fa-instagram"></i></button>
+             <button onclick="window.open('https://www.facebook.com/juan.decarvalhofaustino')"><i class="fab fa-facebook-f"></i></button>
+             <button onclick="window.open('https://twitter.com/JuanCF777')"><i class="fab fa-twitter"></i></button>
+             <button onclick="window.open('https://www.instagram.com/carvalho_faustino/')"><i class="fab fa-instagram"></i></button>
            </div>
          </div>
         </div>
@@ -147,16 +147,16 @@
         <div class="card">
          <div class="content">
            <div class="img">
-            <img src="images/img4.jpg" alt="">
+            <img src="us/telles.jfif" alt="">
            </div>
            <div class="details">
              <div class="name">Vinicius Telles</div>
              <div class="job">Montage</div>
            </div>
            <div class="media-icons">
-             <button href="#"><i class="fab fa-facebook-f"></i></button>
-             <button href="#"><i class="fab fa-twitter"></i></button>
-             <button href="#"><i class="fab fa-instagram"></i></button>
+             <button onclick="window.open('https://www.facebook.com/vinnyts')"><i class="fab fa-facebook-f"></i></button>
+             <button onclick="window.open('https://twitter.com/vinny_ikari')"><i class="fab fa-twitter"></i></button>
+             <button onclick="window.open('https://www.instagram.com/vinny_ts/')"><i class="fab fa-instagram"></i></button>
            </div>
          </div>
         </div>
@@ -168,5 +168,34 @@
       <label for="two" class="two"></label>
     </div>
 </div>
+<script
+src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+crossorigin="anonymous"
+></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+crossorigin="anonymous"
+></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+<script src="./js/init.js"></script>
+<script src="./js/auth.js"></script>
+<script src="./js/index.js"></script>
+<script>
+$("#sidebar-toggle").click(function (e) {
+  e.preventDefault()
+  $("#page").toggleClass("toggled")
+})
+</script>
 </body>
 </html>
