@@ -16,7 +16,7 @@ function login() {
         .then(() => {
           setTimeout(() => {
             window.location.replace("home.html")
-          }, 1000)
+          })
         })
     })
     .catch((error) => {
@@ -71,7 +71,7 @@ function signUp(email, password) {
         .then(() => {
           setTimeout(() => {
             window.location.replace("home.html")
-          }, 1000)
+          })
         })
     })
     .catch((error) => {
