@@ -95,3 +95,14 @@ function signUp(email, password) {
 function logout() {
   firebase.auth().signOut()
 }
+
+function redefine (){
+  firebase.auth().sendPasswordResetEmail(document.getElementById("email").value)
+  swal
+  .fire({ icon: "success", title: "O email com a redefinição de senha foi enviado" })
+  .then(() => {
+    setTimeout(() => {
+      window.location.replace("index.html")
+    })
+  })
+}
