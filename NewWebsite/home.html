@@ -12,6 +12,7 @@
     />
     <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/bars.css" />
 
     <title>iShower web</title>
   </head>
@@ -95,13 +96,29 @@
         <div class="container-fluid">
           <h1 class="mt-4">Atualizações sobre o gasto de água:</h1>
           <div class="row">
-            <!--<input
-              id="newItem"
-              name="newItem"
-              class="form-control col-5 ml-2"
-              type="text"
-              placeholder="Gastos"-->
-              <!--ADICIONAR AQUI A PARTE DE INFORMAR OS DADOS SOBRE GASTOS D'ÁGUA, UTILIZANDO O FIRESTORE!-->
+            <div class="skills">
+              <div class="skill">
+                <div class="skill-name">Gasto geral do Mês</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="90%" style="max-width:90%"></div>
+                </div>
+              </div>
+            
+              <div class="skill">
+                <div class="skill-name">Tempo de banho</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="70%" style="max-width:70%"></div>
+                </div>
+              </div>
+            
+              <div class="skill">
+                <div class="skill-name">Gasto de água hoje</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="60%" style="max-width:60%"></div>
+                </div>
+              </div>
+              <!-----fazer a aba de dicas aqui---->
+            </div>
 
 
     <script

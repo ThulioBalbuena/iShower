@@ -37,7 +37,7 @@ body {
   width: 95%;
 }
 h1 {
-  color: white;
+  color: brown;
 }
 .fullscreen{
   width: 100%;
@@ -56,4 +56,20 @@ h1 {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+footer{
+  background: transparent;
+  padding: 110px 0;
+}
+
+.footer-container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  color: brown;
 }
