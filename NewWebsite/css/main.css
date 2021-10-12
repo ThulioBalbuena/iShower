@@ -65,10 +65,11 @@ h1 {
 footer{
   background: transparent;
   padding: 110px 0;
+  font-size: 25px;
 }
 
 .footer-container{
-  max-width: 1300px;
+  max-width: 3800px;
   margin: auto;
   padding: 0 20px;
   display: flex;
