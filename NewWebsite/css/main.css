@@ -94,3 +94,22 @@ footer{
   flex-wrap: wrap-reverse;
   color: rgb(68, 86, 184);
 }
+
+.myDiv {
+  height: 800px;
+  width: 700px;
+  text-align: center;
+}
+.myDiv2 {
+  position: absolute;
+  width: 700px;
+  text-align:justify
+}
+
+.mt-4{
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.747);
+}
+.inf{
+  font-size: 30px;
+}

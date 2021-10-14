@@ -67,7 +67,7 @@ h1 {
 }
 .main-card .cards .card{
   width: calc(100% / 3 - 10px);
-  background: lightblue;
+  background: rgb(157, 200, 216);
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
@@ -89,7 +89,7 @@ h1 {
   width: 130px;
   border-radius: 50%;
   padding: 3px;
-  background: #FF676D;
+  background: #101280;
   margin-bottom: 14px;
 }
 .card .content .img img{
@@ -105,7 +105,7 @@ h1 {
 }
 .card .content .job{
   font-size: 20px;
-  color: #FF676D;
+  color: #101280;
 }
 .card .content .media-icons{
   margin-top: 10px;
@@ -122,13 +122,13 @@ h1 {
   color: #FFF;
   border-radius: 50%;
   border: 2px solid transparent;
-  background: #FF676D;
+  background: #5f60bd;
   transition: all 0.3s ease;
 }
 .media-icons button:hover{
-  color: #FF676D;
+  color: #5f60bd;
   background-color: #fff;
-  border-color: #FF676D;
+  border-color: #838383;
 }
  .container .button{
   width: 100%;
