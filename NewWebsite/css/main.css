@@ -2,7 +2,7 @@
 
 body {
   font-family: Nunito, sans-serif;
-  color: brown;
+  color: rgb(187, 47, 47);
   background-image: url('https://wallpaperaccess.com/full/887056.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -41,7 +41,7 @@ body {
   width: 95%;
 }
 h1 {
-  color: brown;
+  color: rgb(201, 80, 80);
 }
 .fullscreen{
   width: 100%;
@@ -69,7 +69,7 @@ footer{
 }
 
 .footer-container{
-  max-width: 3800px;
+  max-width: 1800px;
   margin: auto;
   padding: 0 20px;
   display: flex;
