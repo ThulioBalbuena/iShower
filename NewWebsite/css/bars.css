@@ -27,7 +27,7 @@
   }
   
   .skill-per::before{
-    content: attr(per);
+    content: attr('dadoss');
     position: absolute;
     padding: 4px 6px;
     background: #f1f1f1;

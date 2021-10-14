@@ -94,29 +94,13 @@
         </nav>
 
         <div class="container-fluid">
-          <h1 class="mt-4">Atualizações sobre o gasto de água:</h1>
-          <div class="row">
-            <div class="skills">
-              <div class="skill">
-                <div class="skill-name">Gasto geral do Mês</div>
-                <div class="skill-bar">
-                  <div class="skill-per" per="90%" style="max-width:90%"></div>
-                </div>
-              </div>
-            
-              <div class="skill">
-                <div class="skill-name">Tempo de banho</div>
-                <div class="skill-bar">
-                  <div class="skill-per" per="70%" style="max-width:70%"></div>
-                </div>
-              </div>
-            
-              <div class="skill">
-                <div class="skill-name">Gasto de água hoje</div>
-                <div class="skill-bar">
-                  <div class="skill-per" per="60%" style="max-width:60%"></div>
-                </div>
-              </div>
+          <h1 class="mt-4">Litros de água gastos este mês:</h1>
+              <h2 style="color: turquoise;" id="dadoss" ></h2>
+          <h3 class="mt-4">Tempo de banho este mês: </h3>
+              <h4 style="color: turquoise;" id="tempo"></h4>
+          <h5 class="mt-4">Preço a pagar: </h5>
+              <h6 style="color: turquoise;" id="preco"></h6>
+        </div>
               <div style = "position:absolute; left:1000px; top:100px;" class="blog-posts">
                 <div class="post">
                   <img src="us/agua.jpg" alt="" class="post-img">
@@ -154,10 +138,13 @@
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
 
     <script src="./js/init.js"></script>
     <script src="./js/auth.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/database.js"></script>
+
     <script>
       $("#sidebar-toggle").click(function (e) {
         e.preventDefault()
