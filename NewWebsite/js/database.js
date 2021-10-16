@@ -7,7 +7,7 @@ var dbRef2  = firebase.database().ref().child('Tempo');
 dbRef2.on('value', snap => tempo.innerText = snap.val() + ' Minutos');
 
 var preco = document.getElementById('preco');
-var dbRef3  = firebase.database().ref().child('Preço');
+var dbRef3  = firebase.database().ref().child('Price');
 dbRef3.on('value', snap => preco.innerText = 'R$:' + snap.val());
 
 
