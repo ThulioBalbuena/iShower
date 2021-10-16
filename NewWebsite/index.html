@@ -20,15 +20,16 @@
         <h1 style="text-align: center;">Bem vindo</h1>
       </div>
       <div class="row">
-        <div class="col-10 offset-1 bg-white shadow mb-5 border border-primary ">
+        <div class="col-10 offset-1 bg-white shadow mb-5 border border-primary" style="border-radius: 50px;">
           <div class="row">
             <div
               id="loginLogo"
               class="col-6 p-4 bg-primary d-flex justify-content-center"
+              style="border-radius: 50px;" 
             >
               <img src="us/logo.png" alt="Logo water" />
             </div>
-            <div class="col-6 p-5">
+            <div class="col-6 p-5" >
               <div id="loginForm">
                 <h2 class="h2 text-center text-dark mb-3">Entrar</h2>
                 <div class="form-group">
@@ -56,6 +57,13 @@
                 >
                   Login
                 </button>
+                <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="login()"
+              >
+                Criar Conta
+              </button>
                 <button
                 type="button"
                 class="btn btn-outline-primary"
