@@ -1,66 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/bars.css" />
-    <link rel="stylesheet" href="./css/posts.css" />
-    <title>iShower web</title>
-  </head>
-  <body>
-    <div class="full-screen">
-      <video width="device-widht" height="device-height" src="us/video.mp4" autoplay loop></video>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/bars.css" />
+  <link rel="stylesheet" href="./css/posts.css" />
+  <title>iShower web</title>
+</head>
+
+<body>
+  <div class="full-screen">
+    <video width="device-widht" height="device-height" src="us/video.mp4" autoplay loop></video>
     <div id="page" class="d-flex">
       <div id="sidebar" class="bg-light border-right" style="border-radius: 10px;">
         <header>iShower</header>
         <nav class="list-group list-group-flush">
-          <a
-            href="home.html"
-            class="list-group-item list-group-item-action bg-light"
-            >Estatísticas</a
-          >
-          <a
-            href="profile.html"
-            class="list-group-item list-group-item-action bg-light"
-            >Perfil</a
-          >
-          <a
-            href="developers.html"
-            class="list-group-item list-group-item-action bg-light"
-            >Desenvolvedores</a
-          >
-          <a
-            href="#"
-            onclick="logout()"
-            class="list-group-item list-group-item-action bg-light"
-            >Sair</a
-          >
+          <a href="home.html" class="list-group-item list-group-item-action bg-light">Estatísticas</a>
+          <a href="profile.html" class="list-group-item list-group-item-action bg-light">Perfil</a>
+          <a href="developers.html" class="list-group-item list-group-item-action bg-light">Desenvolvedores</a>
+          <a href="#" onclick="logout()" class="list-group-item list-group-item-action bg-light">Sair</a>
         </nav>
       </div>
       <div id="page-content">
-        <nav
-          class="navbar navbar-expand-lg navbar-collapse bg-light border-bottom"
-          style="border-radius: 10px;"
-        >
+        <nav class="navbar navbar-expand-lg navbar-collapse bg-light border-bottom" style="border-radius: 10px;">
           <button id="sidebar-toggle" class="btn btn-primary">Menu</button>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
@@ -69,21 +40,10 @@
                 <a class="nav-link">Conectado pelo Email:</a>
               </li>
               <li class="nav-item dropdown">
-                <a
-                  id="navbarDropdown"
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Meu Usuário</a
-                >
-                <div
-                  class="dropdown-menu dropdown-menu-right"
-                  aria-labelledby="navbarDropdown"
-                  style="border-radius: 20px;"
-                >
+                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Meu Usuário</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"
+                  style="border-radius: 20px;">
                   <a href="profile.html" class="dropdown-item">Perfil</a>
                   <div class="dropdown-divider"></div>
                   <a href="developers.html" class="dropdown-item">Desenvolvedores</a>
@@ -97,70 +57,71 @@
 
         <div class="myDiv">
           <h1 class="mt-4">Litros de água gastos este mês:</h1>
-              <h2 class="inf" style="color: white;" id="dadoss" ></h2>
+          <h2 class="inf" style="color: white;" id="dadoss"></h2>
           <h3 class="mt-4">Tempo de banho este mês: </h3>
-              <h4 class="inf" style="color:white;" id="tempo"></h4>
+          <h4 class="inf" style="color:white;" id="tempo"></h4>
           <h5 class="mt-4">Preço a pagar: </h5>
-              <h6 class="inf" style="color: white;" id="preco"></h6> 
-        <div class="myDiv2" style="color: white; position: absolute; size-adjust: 100px;">
-                <p>Preços utilizados:
-                  <a href="https://fusatiambiental.com.br/o-custo-da-agua-no-brasil/"
-                     title="Site da Fusati">Ir para o Site</a>.
-                  </p>
-          </div> 
+          <h6 class="inf" style="color: white;" id="preco"></h6>
+          <div class="myDiv2" style="color: white; position: absolute; size-adjust: 100px;">
+            <p>Preços utilizados:
+              <a href="https://fusatiambiental.com.br/o-custo-da-agua-no-brasil/" title="Site da Fusati">Ir para o
+                Site</a>.
+            </p>
+          </div>
         </div>
-              <div style = "position:absolute; left:1000px; top:100px;" class="blog-posts">
-                <div class="post">
-                  <img src="us/agua.jpg" alt="" class="post-img">
-                  <div class="post-content">
-                    <h3>Um banho de 15 minutos pode gastar até 135 litros de água. Se você reduzir o tempo embaixo do chuveiro para 5 minutos, apenas 45 litros são utilizados. </h3>
-                    <span onclick="window.open('https://blog.brkambiental.com.br/economia-de-agua/')" class="date">blog.brkambiental.com.br</span>
-                  </div>
-                  <div class="post-content">
-                    <h3>Torneira vazando é fácil de perceber e pode desperdiçar até 40 litros de água por dia. Se perceber esse problema, é fundamental realizar a troca ou o conserto.</h3>
-                    <span onclick="window.open('https://blog.brkambiental.com.br/economia-de-agua/')" class="date">blog.brkambiental.com.br</span>
-                  </div>
-                  <div class="post-content">
-                    <h3>Um buraco de 2 milímetros no encanamento desperdiça cerca de 3 caixas d’água de mil litros.</h3>
-                    <span onclick="window.open('https://www.saaeitauna.com.br/portal/noticias/0/3/944/15-dicas-para-economizar-agua-e-reduzir-o-seu-consumo-e-sua-conta')"class="date">saaeitauna.com.br</span>
-                  </div>
-    <div 
-      <h7 style="justify-content: center; color: rgba(255, 255, 255, 0.747);">Confira essas e outras dicas acessandos os links acima!</h7>
-    </div>
+        <div style="position:absolute; left:1000px; top:100px;" class="blog-posts">
+          <div class="post">
+            <img src="us/agua.jpg" alt="" class="post-img">
+            <div class="post-content">
+              <h3>Um banho de 15 minutos pode gastar até 135 litros de água. Se você reduzir o tempo embaixo do chuveiro
+                para 5 minutos, apenas 45 litros são utilizados. </h3>
+              <span onclick="window.open('https://blog.brkambiental.com.br/economia-de-agua/')"
+                class="date">blog.brkambiental.com.br</span>
+            </div>
+            <div class="post-content">
+              <h3>Torneira vazando é fácil de perceber e pode desperdiçar até 40 litros de água por dia. Se perceber
+                esse problema, é fundamental realizar a troca ou o conserto.</h3>
+              <span onclick="window.open('https://blog.brkambiental.com.br/economia-de-agua/')"
+                class="date">blog.brkambiental.com.br</span>
+            </div>
+            <div class="post-content">
+              <h3>Um buraco de 2 milímetros no encanamento desperdiça cerca de 3 caixas d’água de mil litros.</h3>
+              <span
+                onclick="window.open('https://www.saaeitauna.com.br/portal/noticias/0/3/944/15-dicas-para-economizar-agua-e-reduzir-o-seu-consumo-e-sua-conta')"
+                class="date">saaeitauna.com.br</span>
+            </div>
+            <div <h7 style="justify-content: center; color: rgba(255, 255, 255, 0.747);">Confira essas e outras dicas
+              acessandos os links acima!</h7>
+            </div>
 
 
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+              integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+              crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+              integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+              crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+              integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+              crossorigin="anonymous"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
 
-    <script src="./js/init.js"></script>
-    <script src="./js/auth.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/database.js"></script>
+            <script src="./js/init.js"></script>
+            <script src="./js/auth.js"></script>
+            <script src="./js/index.js"></script>
+            <script src="./js/database.js"></script>
 
-    <script>
-      $("#sidebar-toggle").click(function (e) {
-        e.preventDefault()
-        $("#page").toggleClass("toggled")
-      })
-    </script>
-  </body>
+            <script>
+              $("#sidebar-toggle").click(function (e) {
+                e.preventDefault()
+                $("#page").toggleClass("toggled")
+              })
+            </script>
+</body>
+
 </html>

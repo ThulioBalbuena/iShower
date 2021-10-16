@@ -67,7 +67,10 @@ function signUp(email, password) {
     .createUserWithEmailAndPassword(email, password)
     .then(() => {
       swal
-        .fire({ icon: "success", title: "Usuário foi criado com sucesso" })
+        .fire({
+          icon: "success",
+          title: "Usuário foi criado com sucesso"
+        })
         .then(() => {
           setTimeout(() => {
             window.location.replace("home.html")
@@ -96,14 +99,16 @@ function logout() {
   firebase.auth().signOut()
 }
 
-function redefine (){
+function redefine() {
   firebase.auth().sendPasswordResetEmail(document.getElementById("email").value)
   swal
-  .fire({ icon: "success", title: "O email com a redefinição de senha foi enviado" })
-  .then(() => {
-    setTimeout(() => {
-      window.location.replace("index.html")
+    .fire({
+      icon: "success",
+      title: "O email com a redefinição de senha foi enviado"
     })
-  })
+    .then(() => {
+      setTimeout(() => {
+        window.location.replace("index.html")
+      })
+    })
 }
-

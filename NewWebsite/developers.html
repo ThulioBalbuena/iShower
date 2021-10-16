@@ -1,202 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>
-    <link rel="stylesheet" href="./css/card.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <title>iShower web</title>
-  </head>
-  <body>
-    <div id="page" class="d-flex">
-      <div id="sidebar" class="bg-light border-right">
-        <header>iShower</header>
-        <nav class="list-group list-group-flush">
-          <a
-            href="home.html"
-            class="list-group-item list-group-item-action bg-light"
-            >Estatísticas</a
-          >
-          <a
-            href="profile.html"
-            class="list-group-item list-group-item-action bg-light"
-            >Perfil</a
-          >
-          <a
-          href="developers.html"
-          class="list-group-item list-group-item-action bg-light"
-          >Desenvolvedores</a
-        >
-          <a
-            href="#"
-            onclick="logout()"
-            class="list-group-item list-group-item-action bg-light"
-            >Sair</a
-          >
-        </nav>
-      </div>
-      <div id="page-content">
-        <nav
-          class="navbar navbar-expand-lg navbar-collapse bg-light border-bottom"
-        >
-          <button id="sidebar-toggle" class="btn btn-primary">Menu</button>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="navbarSupportedContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto mt-2">
-              <li class="nav-item active">
-                <a class="nav-link">Conectado pelo Email:</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  id="navbarDropdown"
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Meu Usuário</a
-                >
-                <div
-                  class="dropdown-menu dropdown-menu-right"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <a href="profile.html" class="dropdown-item">Perfil</a>
-                  <div class="dropdown-divider"></div>
-                  <a href="developers.html" class="dropdown-item">Desenvolvedores</a>
-                  <div class="dropdown-divider"></div>
-                  <a href="#" class="dropdown-item" onclick="logout()">Sair</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-  <div class="container">
-    <input type="radio" name="dot" id="one">
-    <input type="radio" name="dot" id="two">
-    <div class="main-card">
-      <div class="cards">
-        <div class="card">
-         <div class="content">
-           <div class="img">
-            <img src="us/thulio.jfif" alt="">
-           </div>
-           <div class="details">
-             <div class="name">Thulio Balbuena</div>
-             <div class="job">Web Developer</div>
-           </div>
-           <div class="media-icons">
-             <button onclick="window.open('https://www.facebook.com/thuliobalbuena/')"><i class="fab fa-facebook-f"></i></button>
-             <button onclick="window.open('https://twitter.com/Balbuenaxx')"><i class="fab fa-twitter"></i></button>
-             <button onclick="window.open('https://www.instagram.com/thuliobalbuenaa/')"><i class="fab fa-instagram"></i></button>
-           </div>
-         </div>
-        </div>
-        <div class="card">
-         <div class="content">
-           <div class="img">
-            <img src="us/martins.jfif" alt="">
-           </div>
-           <div class="details">
-             <div class="name">Arthur Martins</div>
-             <div class="job">Documentation</div>
-           </div>
-           <div class="media-icons">
-             <button onclick="window.open('https://www.facebook.com/arthur.martins.3194524')"><i class="fab fa-facebook-f"></i></button>
-             <button onclick="window.open('https://twitter.com/artmtins')"><i class="fab fa-twitter"></i></button>
-             <button onclick="window.open('https://www.instagram.com/artmtins/')"><i class="fab fa-instagram"></i></button>
-           </div>
-         </div>
-        </div>
-        <div class="card">
-         <div class="content">
-           <div class="img">
-            <img src="us/juan.jfif" alt="">
-           </div>
-           <div class="details">
-             <div class="name">Juan Carvalho</div>
-             <div class="job">Documentation</div>
-           </div>
-           <div class="media-icons">
-             <button onclick="window.open('https://www.facebook.com/juan.decarvalhofaustino')"><i class="fab fa-facebook-f"></i></button>
-             <button onclick="window.open('https://twitter.com/JuanCF777')"><i class="fab fa-twitter"></i></button>
-             <button onclick="window.open('https://www.instagram.com/carvalho_faustino/')"><i class="fab fa-instagram"></i></button>
-           </div>
-         </div>
-        </div>
-      </div>
-      <div class="cards">
-        <div class="card">
-         <div class="content">
-           <div class="img">
-            <img src="us/telles.jfif" alt="">
-           </div>
-           <div class="details">
-             <div class="name">Vinicius Telles</div>
-             <div class="job">Montage</div>
-           </div>
-           <div class="media-icons">
-             <button onclick="window.open('https://www.facebook.com/vinnyts')"><i class="fab fa-facebook-f"></i></button>
-             <button onclick="window.open('https://twitter.com/vinny_ikari')"><i class="fab fa-twitter"></i></button>
-             <button onclick="window.open('https://www.instagram.com/vinny_ts/')"><i class="fab fa-instagram"></i></button>
-           </div>
-         </div>
-        </div>
-        
-           </div>
-         </div>
-    <div class="button">
-      <label for="one" class=" active one"></label>
-      <label for="two" class="two"></label>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>
+  <link rel="stylesheet" href="./css/card.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <title>iShower web</title>
+</head>
+
+<body>
+  <div id="page" class="d-flex">
+    <div id="sidebar" class="bg-light border-right">
+      <header>iShower</header>
+      <nav class="list-group list-group-flush">
+        <a href="home.html" class="list-group-item list-group-item-action bg-light">Estatísticas</a>
+        <a href="profile.html" class="list-group-item list-group-item-action bg-light">Perfil</a>
+        <a href="developers.html" class="list-group-item list-group-item-action bg-light">Desenvolvedores</a>
+        <a href="#" onclick="logout()" class="list-group-item list-group-item-action bg-light">Sair</a>
+      </nav>
     </div>
-</div>
-<script
-src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-crossorigin="anonymous"
-></script>
-<script
-src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-crossorigin="anonymous"
-></script>
-<script
-src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-crossorigin="anonymous"
-></script>
+    <div id="page-content">
+      <nav class="navbar navbar-expand-lg navbar-collapse bg-light border-bottom">
+        <button id="sidebar-toggle" class="btn btn-primary">Menu</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto mt-2">
+            <li class="nav-item active">
+              <a class="nav-link">Conectado pelo Email:</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Meu Usuário</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a href="profile.html" class="dropdown-item">Perfil</a>
+                <div class="dropdown-divider"></div>
+                <a href="developers.html" class="dropdown-item">Desenvolvedores</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item" onclick="logout()">Sair</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <input type="radio" name="dot" id="one">
+        <input type="radio" name="dot" id="two">
+        <div class="main-card">
+          <div class="cards">
+            <div class="card">
+              <div class="content">
+                <div class="img">
+                  <img src="us/thulio.jfif" alt="">
+                </div>
+                <div class="details">
+                  <div class="name">Thulio Balbuena</div>
+                  <div class="job">Web Developer</div>
+                </div>
+                <div class="media-icons">
+                  <button onclick="window.open('https://www.facebook.com/thuliobalbuena/')"><i
+                      class="fab fa-facebook-f"></i></button>
+                  <button onclick="window.open('https://twitter.com/Balbuenaxx')"><i
+                      class="fab fa-twitter"></i></button>
+                  <button onclick="window.open('https://www.instagram.com/thuliobalbuenaa/')"><i
+                      class="fab fa-instagram"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="img">
+                  <img src="us/martins.jfif" alt="">
+                </div>
+                <div class="details">
+                  <div class="name">Arthur Martins</div>
+                  <div class="job">Documentation</div>
+                </div>
+                <div class="media-icons">
+                  <button onclick="window.open('https://www.facebook.com/arthur.martins.3194524')"><i
+                      class="fab fa-facebook-f"></i></button>
+                  <button onclick="window.open('https://twitter.com/artmtins')"><i class="fab fa-twitter"></i></button>
+                  <button onclick="window.open('https://www.instagram.com/artmtins/')"><i
+                      class="fab fa-instagram"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="img">
+                  <img src="us/juan.jfif" alt="">
+                </div>
+                <div class="details">
+                  <div class="name">Juan Carvalho</div>
+                  <div class="job">Documentation</div>
+                </div>
+                <div class="media-icons">
+                  <button onclick="window.open('https://www.facebook.com/juan.decarvalhofaustino')"><i
+                      class="fab fa-facebook-f"></i></button>
+                  <button onclick="window.open('https://twitter.com/JuanCF777')"><i class="fab fa-twitter"></i></button>
+                  <button onclick="window.open('https://www.instagram.com/carvalho_faustino/')"><i
+                      class="fab fa-instagram"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <div class="content">
+                <div class="img">
+                  <img src="us/telles.jfif" alt="">
+                </div>
+                <div class="details">
+                  <div class="name">Vinicius Telles</div>
+                  <div class="job">Montage</div>
+                </div>
+                <div class="media-icons">
+                  <button onclick="window.open('https://www.facebook.com/vinnyts')"><i
+                      class="fab fa-facebook-f"></i></button>
+                  <button onclick="window.open('https://twitter.com/vinny_ikari')"><i
+                      class="fab fa-twitter"></i></button>
+                  <button onclick="window.open('https://www.instagram.com/vinny_ts/')"><i
+                      class="fab fa-instagram"></i></button>
+                </div>
+              </div>
+            </div>
 
-<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+          </div>
+        </div>
+        <div class="button">
+          <label for="one" class=" active one"></label>
+          <label for="two" class="two"></label>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+      </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+      </script>
 
-<script src="./js/init.js"></script>
-<script src="./js/auth.js"></script>
-<script src="./js/index.js"></script>
-<script>
-$("#sidebar-toggle").click(function (e) {
-  e.preventDefault()
-  $("#page").toggleClass("toggled")
-})
-</script>
+      <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+      <script src="./js/init.js"></script>
+      <script src="./js/auth.js"></script>
+      <script src="./js/index.js"></script>
+      <script>
+        $("#sidebar-toggle").click(function (e) {
+          e.preventDefault()
+          $("#page").toggleClass("toggled")
+        })
+      </script>
 </body>
+
 </html>
